@@ -1,0 +1,49 @@
+.clients {
+  padding: 140px 0 150px;
+  background-color: #012f34;
+  background-image: url("/img/clients-img2.png");
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+.clients__body {
+  text-align: center;
+}
+.clinets__titile {
+  @include title;
+  margin-bottom: 70px;
+}
+.clients__list {
+  @include flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 992px) {
+  .clients {
+    background-image: url("/img/clinets-img1.png");
+  }
+  .clinets__titile {
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .clients__img {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .clients {
+    background-image: url("/img/clinets-img1.png");
+    padding-bottom: 100px;
+  }
+  .clinets__titile {
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .clients__list {
+    row-gap: 55px;
+    flex-direction: column;
+  }
+  .clients__img {
+    width: 100%;
+  }
+}

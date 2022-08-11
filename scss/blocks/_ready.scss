@@ -1,0 +1,43 @@
+.ready {
+  background-image: url("/img/ready1.png");
+  padding: 75px 0;
+  background-color: #f67e7e;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+
+.ready__body {
+  @include flex;
+  max-width: 80%;
+  align-items: center;
+  margin: 0 auto;
+}
+.ready__title {
+  @include title;
+  max-width: 70%;
+  color: #012f34;
+}
+
+.ready__btn {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #012f34;
+  border: 2px solid #012f34;
+  border-radius: 24px;
+  padding: 10px 35px;
+  &:hover {
+    background-color: #012f34;
+    color: #ffffff;
+  }
+}
+@media screen and (max-width: 768px) {
+  .ready__body {
+    flex-direction: column;
+    text-align: center;
+  }
+  .ready__title {
+    margin-bottom: 25px;
+  }
+}

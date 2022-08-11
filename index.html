@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>MyTeam</title>
+  </head>
+  <body>
+    <!-- Header start -->
+
+    <header class="header">
+      <div class="header__container container">
+        <div class="header__body">
+          <div class="header_box">
+            <a class="header__logo-link" href="./index.html">
+              <img
+                class="header__logo-img"
+                src="./img/myteam.svg"
+                alt="site-logo"
+              />
+            </a>
+            <nav class="header__nav nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="index.html" class="nav__link">home</a>
+                </li>
+                <li class="nav__item">
+                  <a href="about.html" class="nav__link">about</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <a class="header__btn" href="contact.html">contact us</a>
+
+          <!-- sidenav -->
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+              >&times;</a
+            >
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a class="header-menu__btn" href="contact.html">contact us</a>
+          </div>
+
+          <div id="main">
+            <span style="font-size: 30px; cursor: pointer" onclick="openNav()"
+              >&#9776;
+            </span>
+          </div>
+
+          <script>
+            function openNav() {
+              document.getElementById("mySidenav").style.width = "70%";
+              document.getElementById("main").style.marginLeft = "250px";
+            }
+
+            function closeNav() {
+              document.getElementById("mySidenav").style.width = "0";
+              document.getElementById("main").style.marginLeft = "0";
+            }
+          </script>
+          <!-- sidenav -->
+        </div>
+      </div>
+    </header>
+
+    <!-- Header end -->
+
+    <main>
+      <!-- Hero start -->
+
+      <section class="hero">
+        <div class="hero__container container">
+          <div class="hero__body">
+            <h2 class="hero__title">
+              Find the best <span class="hero__span"> talent</span>
+            </h2>
+            <p class="hero__text">
+              Finding the right people and building high performing teams can be
+              hard. Most companies aren’t tapping into the abundance of global
+              talent. We’re about to change that.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Hero end -->
+
+      <!-- Build start -->
+
+      <section class="build">
+        <div class="build__container container">
+          <div class="build__body">
+            <h2 class="build__title">
+              Build & manage distributed teams like no one else.
+            </h2>
+            <ul class="build__list">
+              <li class="build__item">
+                <div class="build_box">
+                  <h3 class="build__subtitle">Experienced Individuals</h3>
+                  <p class="build__text">
+                    Our network is made up of highly experienced professionals
+                    who are passionate about what they do.
+                  </p>
+                </div>
+              </li>
+              <li class="build__item">
+                <div class="build_box">
+                  <h3 class="build__subtitle">Easy to Implement</h3>
+                  <p class="build__text">
+                    Our processes have been refined over years of implementation
+                    meaning our teams always deliver.
+                  </p>
+                </div>
+              </li>
+              <li class="build__item">
+                <div class="build_box">
+                  <h3 class="build__subtitle">Enhanced Productivity</h3>
+                  <p class="build__text">
+                    Our customized platform with in-built analytics helps you
+                    manage your distributed teams.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Build end -->
+
+      <!-- Delivery start -->
+
+      <section class="delivery">
+        <div class="delivery__container container">
+          <div class="delivery__body">
+            <h2 class="delivery__title">
+              Delivering real results for top companies. Some of our
+              <span class="delivery__title-span"> success stories.</span>
+            </h2>
+            <ul class="delivery__list">
+              <li class="delivery__item">
+                <p class="delivery__text">
+                  “The team perfectly fit the specialized skill set required.
+                  They focused on the most essential features helping us launch
+                  the platform eight months faster than planned.”
+                </p>
+                <h3 class="delivery__subtitle">Kady Baker</h3>
+                <span class="delivery__span">Product Manager at Bookmark</span>
+                <img
+                  class="delivery__img"
+                  src="/img/delivery-item-img1.svg"
+                  alt=""
+                />
+              </li>
+              <li class="delivery__item">
+                <p class="delivery__text">
+                  “We needed to automate our entire onboarding process. The team
+                  came in and built out the whole journey. Since going live,
+                  user retention has gone through the roof!”
+                </p>
+                <h3 class="delivery__subtitle">Aiysha Reese</h3>
+                <span class="delivery__span">Founder of Manage</span>
+                <img
+                  class="delivery__img"
+                  src="/img/delivery-item-img2.svg"
+                  alt=""
+                />
+              </li>
+              <li class="delivery__item">
+                <p class="delivery__text">
+                  “Amazing. Our team helped us build an app that delivered a new
+                  experience for hiring a physio. The launch was an instant
+                  success with 100k downloads in the first month.”
+                </p>
+                <h3 class="delivery__subtitle">Arthur Clarke</h3>
+                <span class="delivery__span">Co-founder of MyPhysio</span>
+                <img
+                  class="delivery__img"
+                  src="/img/delivery-item-img3.svg"
+                  alt=""
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Delivery end -->
+
+      <!-- Ready start -->
+
+      <section class="ready">
+        <div class="ready__container container">
+          <div class="ready__body">
+            <h2 class="ready__title">Ready to get started?</h2>
+            <a class="ready__btn" href="about.html" target="_blank"
+              >contact us</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Ready end -->
+    </main>
+    <!-- Footer start -->
+
+    <footer>
+      <div class="footer__container container">
+        <div class="footer__body">
+          <div class="footer__box">
+            <a href="index.html">
+              <img
+                class="footer__logo"
+                src="./img/myteam.svg"
+                alt="footer-logo"
+              />
+            </a>
+            <ul class="footer-nav__list">
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="/index.html">Home</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="/about.html">About</a>
+              </li>
+            </ul>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <i class="fa fa-facebook-square" id="facebook"></i>
+                <i class="fa fa-github-square github" id="github"></i>
+                <i class="fa fa-twitter" id="twitter"></i>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__info">
+            <span class="footer__span">987 Hillcrest Lane</span>
+            <span class="footer__span">Irvine, CA</span>
+            <span class="footer__span">California 92714</span>
+            <span class="footer__span">Call Us : 949-833-7432</span>
+            <span class="footer__span"
+              >Copyright 2020. All Rights Reserved</span
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Footer end -->
+    <link rel="stylesheet" href="./js/main.js" />
+  </body>
+</html>
